@@ -36,7 +36,6 @@ def games():
         200
     )
 
-    return response
-
+    response.headers['content-Type'] = "application/json"
 if __name__ == '__main__':
     app.run(port=5555)
